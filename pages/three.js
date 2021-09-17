@@ -31,7 +31,7 @@ function Box(props) {
   return (
     <mesh
       {...props}
-      {...bind()}
+      //   {...bind()}
       ref={ref}
       scale={1}
       onClick={(event) => setActive(!active)}
@@ -61,7 +61,6 @@ function CanvasPlayground() {
       <pointLight position={[100, 100, 100]} />
       <Box position={[-2.2, 0, 0]} />
       <Box position={[-2.2, 2.1, 0]} />
-
       <Box position={[2.2, 0, 0]} />
     </Canvas>
   )
